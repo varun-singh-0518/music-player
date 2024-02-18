@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 🎶Music Player App
 
-First, run the development server:
+This project is a music player application built using Next.js. It allows users to listen to their favorite songs, create playlists, and manage their music library seamlessly. The app is designed to provide an intuitive and enjoyable music listening experience.
+
+
+## 🚀Features
+
+- User Authentication: Users can sign up, log in, and manage their accounts securely.
+- Music Library Management: Users can upload, organize, and manage their music library.
+- Playlist Creation: Users can create custom playlists and add songs to them.
+- Search Functionality: Users can search for songs, albums, or artists within the app.
+- Music Playback: Utilizes the use-sound package for playing music with sound effects and controls.
+- Responsive Design: The app is responsive and works well across various devices and screen sizes.
+
+
+## 💻Technologies Used
+
+- Next.js: Next.js is a React framework that enables server-side rendering and other advanced features for React applications.
+- React: React is a JavaScript library for building user interfaces.
+- TypeScript: TypeScript is a superset of JavaScript that adds static types to the language, providing better tooling and code quality.
+- Tailwind CSS: Tailwind CSS is a utility-first CSS framework used for styling the application.
+- Radix UI: Radix UI provides accessible and customizable UI components for React applications.
+- Supabase: Supabase is used for data management, including storing user profiles, music metadata, and playlists.
+- use-sound: The use-sound package is used for playing music with sound effects and controls.
+
+
+## 📷Screenshots
+
+![App Screenshot](https://i.postimg.cc/zXWxN9Wq/Screenshot-2024-02-18-193422.png)
+
+![App Screenshot](https://i.postimg.cc/500PMy5r/Screenshot-2024-02-18-193457.png)
+
+![App Screenshot](https://i.postimg.cc/vT520jt8/Screenshot-2024-02-18-193515.png)
+
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/varun-singh-0518/music-player.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd my-project
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the development server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run this project, you will need to add the following environment variables to your .env.local file in the root directory.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`NEXT_PUBLIC_SUPABASE_URL` = your_public_supabase_url
+
+`NEXT_PUBLIC_SUPABASE_ANON_KEY` = your_supabase_anon_key
+
+`sUPABASE_SERVICE_ROLE_KEY` = your_supabase_service_key
+
